@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda Seu Carro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="container">
+
+
+            <div class="header">
+                <h3>Venda sua casa de maneira ágil e fácil!</h3>
+            </div>
+
+            <div class="form-container">
+                <div class="form-header">
+                    <p>Formulário</p>
+                </div>
+
+                <div class="form-body">
+                    <h1 class="form-title">Venda fácil sua Casa!</h1>
+                    <p>Descrevas as características e marque os opcionais que ela possui</p>
+
+                    <form>
+                        <div class="box-input">
+                            <label for="title">
+                                Título do anúncio <span class="required-field">*</span>
+                            </label>
+    
+                            <input 
+                            type="text" 
+                            name="title" 
+                            id="title" 
+                            class="block" 
+                            placeholder="Um título para anúnciar o sua casa" 
+                            minlength="1"
+                            maxlength="30"
+                            required
+                        />
+                        </div>
+
+                        <div class="box-input">
+                            <label for="price">
+                                Preço <span class="required-field">*</span>
+                            </label>
+    
+                            <input 
+                            type="number" 
+                            name="price" 
+                            id="price" 
+                            class="block" 
+                            placeholder="Defina o Preço" 
+                            required
+                        />
+                        </div>
+
+                        <div class="box-input">
+                            <label for="description">
+                                Descrição <span class="required-field">*</span>
+                            </label>
+                            <textarea name="description" id="description" 
+                            class="block" placeholder="Aqui você ira colocar uma breve descrição sobre sua casa (Estado de conservação, o que foi feito de manuntenção entre outros)."></textarea>
+                        </div>
+
+                        <div class="box-input">
+                        <label for="brand">
+                            Endereço: <span class="required-field">*</span>
+                        </label>
+
+                        <input 
+                        type="text" 
+                        name="brand" 
+                        id="brand" 
+                        class="block" 
+                        placeholder="Qual o endereço da sua casa? Exemplo:(Rua Jandira, 62 - Jardim Jandira)" 
+                        required
+                    />
+                    </div>
+                    
+                    <div class="box-input">
+                        <label for="model">
+                            Cidade: <span class="required-field">*</span>
+                        </label>
+
+                        <input 
+                        type="text" 
+                        name="model" 
+                        id="model" 
+                        class="block" 
+                        placeholder="Exemplo: (Jandira/SP)" 
+                        required
+                    />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="maleage">
+                            CEP: <span class="required-field">*</span>
+                        </label>
+
+                        <input 
+                        type="number" 
+                        name="maleage" 
+                        id="maleage" 
+                        class="block" 
+                        placeholder="Qual o CEP do seu Endereço?" 
+                        required
+                    />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="purchase_date">
+                            Data de Compra <span class="required-field">*</span>
+                        </label>
+
+                        <input 
+                        type="date" 
+                        name="purchase_date" 
+                        id="purchase_date" 
+                        class="block" 
+                        required
+                    />
+                    </div>
+
+                    <div class="box-input">
+                        <p>Tipo de Casa: <span class="required-field">*</span></p>
+
+                        <input type="radio" id="Manual" name="gear">
+                        <label for="manual">Casa</label>
+                        <input type="radio" id="auto" name="gear">
+                        <label for="auto">Apartamento</label>
+                        <input type="radio" id="condominio" name="gear">
+                        <label for="auto">Condominio</label>
+                    </div>
+
+                    <div class="optional-box">
+                        <p>Quantidade de Cômodos</p>
+
+                        <ul class="optional-list">
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                name="optional[]" 
+                                id="airbag" 
+                                value="airbag">
+                                <label for="airbag">1</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                name="optional[]" 
+                                id="alarm" 
+                                value="alarm">
+                                <label for="alarm">2</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                name="optional[]" 
+                                id="ac" 
+                                value="ac">
+                                <label for="ac">3</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                name="optional[]" 
+                                id="reverse_camera" 
+                                value="reverse_camera">
+                                <label for="reverse_camera">4 ou Mais</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                name="optional[]" 
+                                id="lane_assist" 
+                                value="lane_assist">
+                                <label for="lane_assist">Pscina</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                name="optional[]" 
+                                id="keyless" 
+                                value="keyless">
+                                <label for="keyless">Lavanderia</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                name="optional[]" 
+                                id="smartphone" 
+                                value="smartphone">
+                                <label for="smartphone">Suíte</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox" 
+                                name="optional[]" 
+                                id="leather_seat" 
+                                value="leather_seat">
+                                <label for="leather_seat">Área de Lazer</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Fotos da Casa <span class="required-field">*</span></p>
+                        <input type="file" multiple accept="image/png, image/jpg" id="images" name="images" required>
+                    </div>
+                    <input type="submit" name="Enviar" class="btn-submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
